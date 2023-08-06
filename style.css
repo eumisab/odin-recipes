@@ -1,51 +1,40 @@
 * {
-    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: antiquewhite;
 }
 
-#title {
+.headings {
     text-align: center;
 }
 
-.sab {
-    font-size: 15px;
-    text-align: center;
-}
-
-.block {
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    width: 500px;
-}
-
-#contents {
-    margin-top: 2rem;
-    height: 150px;
-    border: 1px solid black;
-    text-align: center;
-    border-radius: 25px;
-    background-color: bisque;
-}
-
-.recipes {
-    list-style: none;
-    margin: 35px;
-}
-
-.recipe {
-    margin-top: 6px;
-    color: black;
-}
-
-a {
-    color:black;
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 img {
-    height: auto;
-    width: 500px;
+    width: 200px;
+    height: 150px;
+    transition: all 0.6s;
 }
 
-li {
-    font-family:'Courier New', Courier, monospace;
+img:hover {
+    transform:scale(1.1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.recipe-cards {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+.recipe-cards h2 {
+    text-align: center;
+    font-size: small;
 }
